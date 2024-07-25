@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Vendas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Loja Online</h1>
+        <button id="cart-button">Carrinho (<span id="cart-count">0</span>)</button>
+    </header>
+    <main>
+        <div id="products">
+            <div class="product">
+                <h2>Produto 1</h2>
+                <p>Preço: R$ 50,00</p>
+                <button class="add-to-cart" data-price="50">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <h2>Produto 2</h2>
+                <p>Preço: R$ 30,00</p>
+                <button class="add-to-cart" data-price="30">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <h2>Produto 3</h2>
+                <p>Preço: R$ 20,00</p>
+                <button class="add-to-cart" data-price="20">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Loja Online</p>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrinho de Compras</h2>
+            <div id="cart-items"></div>
+            <p>Total: R$ <span id="total-price">0</span></p>
+            <button id="checkout-button">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
